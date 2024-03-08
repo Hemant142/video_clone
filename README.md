@@ -1,4 +1,5 @@
 # Video Clone
+The "Video Clone" web application is a simplified platform where users can browse and watch videos. It provides a clean and intuitive user interface, allowing users to easily navigate through the available videos and play them.
 
 # Deployed Link
  [Live](https://video-clone-pearl.vercel.app/)
@@ -22,10 +23,14 @@ run project
 npm run dev
 ```
 # Functionality
-- Pagination provided 
-- User Can like or dislike video
-- Video is played and stoped also volume can be controled 
-
+- Video Thumbnails: View predefined video thumbnails with titles and descriptions.
+- Video Playback: Click on thumbnails to play the corresponding videos.
+- Pagination: Navigate through video thumbnails using pagination controls.
+- Like/Dislike: Interact with videos by liking or disliking them with a single click.
+- Comments: Engage with videos by adding comments, with support for local storage.
+- State Management: Efficiently manage video lists, playback, likes, and comments.
+- Technologies Used: Developed using React.js (or Solid.js) with Tailwind CSS and Typescript.
+- Responsive design ensures optimal viewing experience across different devices.
 
 # ScreenShots  Laptop
 
@@ -35,7 +40,7 @@ npm run dev
 
 ## Single Video Player 
 
-[![Single-Page-Laptop.png](https://i.postimg.cc/Nf3cdqyC/Single-Page-Laptop.png)](https://postimg.cc/MvmNGLm1)
+[![Single-Page-Laptop.png](https://i.postimg.cc/pTj1sgFh/Single-Page-Laptop.png)](https://postimg.cc/WF2n3YST)
 
 # ScreenShots  For Tablets
 
@@ -45,7 +50,7 @@ npm run dev
 
 ## Single Video Player 
 
-[![Tablet1.png](https://i.postimg.cc/15cjr3Yv/Tablet1.png)](https://postimg.cc/QHCmXhD7)
+[![Single-Page-Tablet.png](https://i.postimg.cc/02nXXGbf/Single-Page-Tablet.png)](https://postimg.cc/SJXGJML2)
 
 
 # ScreenShots  For Mobile
@@ -57,4 +62,4 @@ npm run dev
 
 ## Single Video Player 
 
-[![Single-Page-Mobile.png](https://i.postimg.cc/9fSKQyG8/Single-Page-Mobile.png)](https://postimg.cc/kVQfj6YK)
+[![Single-Page-Mobile.png](https://i.postimg.cc/1znWzLMC/Single-Page-Mobile.png)](https://postimg.cc/Y47NnD5Y)
