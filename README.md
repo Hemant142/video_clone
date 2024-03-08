@@ -23,8 +23,10 @@ npm run dev
 ```
 # Functionality
 - Pagination provided 
-- User Can like or dislike video
-- Video is played and stoped also volume can be controled 
+- Users can like or dislike video
+- USers can Comment also on Videos
+- Video is played and stopped also volume can be controlled
+
 
 
 # ScreenShots  Laptop
@@ -35,7 +37,7 @@ npm run dev
 
 ## Single Video Player 
 
-[![Single-Page-Laptop.png](https://i.postimg.cc/Nf3cdqyC/Single-Page-Laptop.png)](https://postimg.cc/MvmNGLm1)
+[![Single-Page-Laptop.png](https://i.postimg.cc/pTj1sgFh/Single-Page-Laptop.png)](https://postimg.cc/WF2n3YST)
 
 # ScreenShots  For Tablets
 
@@ -45,7 +47,7 @@ npm run dev
 
 ## Single Video Player 
 
-[![Tablet1.png](https://i.postimg.cc/15cjr3Yv/Tablet1.png)](https://postimg.cc/QHCmXhD7)
+[![Single-Page-Tablet.png](https://i.postimg.cc/02nXXGbf/Single-Page-Tablet.png)](https://postimg.cc/SJXGJML2)
 
 
 # ScreenShots  For Mobile
@@ -57,4 +59,4 @@ npm run dev
 
 ## Single Video Player 
 
-[![Single-Page-Mobile.png](https://i.postimg.cc/9fSKQyG8/Single-Page-Mobile.png)](https://postimg.cc/kVQfj6YK)
+[![Single-Page-Mobile.png](https://i.postimg.cc/1znWzLMC/Single-Page-Mobile.png)](https://postimg.cc/Y47NnD5Y)
