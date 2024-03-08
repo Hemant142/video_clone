@@ -1,4 +1,5 @@
 # Video Clone
+The "Video Clone" web application is a simplified platform where users can browse and watch videos. It provides a clean and intuitive user interface, allowing users to easily navigate through the available videos and play them.
 
 # Deployed Link
  [Live](https://video-clone-pearl.vercel.app/)
