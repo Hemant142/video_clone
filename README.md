@@ -22,12 +22,14 @@ run project
 npm run dev
 ```
 # Functionality
-- Pagination provided 
-- Users can like or dislike video
-- USers can Comment also on Videos
-- Video is played and stopped also volume can be controlled
-
-
+- Video Thumbnails: View predefined video thumbnails with titles and descriptions.
+- Video Playback: Click on thumbnails to play the corresponding videos.
+- Pagination: Navigate through video thumbnails using pagination controls.
+- Like/Dislike: Interact with videos by liking or disliking them with a single click.
+- Comments: Engage with videos by adding comments, with support for local storage.
+- State Management: Efficiently manage video lists, playback, likes, and comments.
+- Technologies Used: Developed using React.js (or Solid.js) with Tailwind CSS and Typescript.
+- Responsive design ensures optimal viewing experience across different devices.
 
 # ScreenShots  Laptop
 
