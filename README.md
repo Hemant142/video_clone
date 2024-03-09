@@ -36,30 +36,29 @@ npm run dev
 
 ## HomePage
 
-[![Home-Page-Laptop.png](https://i.postimg.cc/9FKWswkp/Home-Page-Laptop.png)](https://postimg.cc/Vd9QCvmr)
+[![Home-Page-Laptop.png](https://i.postimg.cc/63QD4nJY/Home-Page-Laptop.png)](https://postimg.cc/hJHCHJGd)
 
 ## Single Video Player 
 
-[![Single-Page-Laptop.png](https://i.postimg.cc/pTj1sgFh/Single-Page-Laptop.png)](https://postimg.cc/WF2n3YST)
+[![Single-Page-Laptop.png](https://i.postimg.cc/cHpGqC2h/Single-Page-Laptop.png)](https://postimg.cc/bD9BkyzS)
 
 # ScreenShots  For Tablets
 
 ## Home Page
 
-[![Home-Page-Tablet.png](https://i.postimg.cc/T3VZQyvh/Home-Page-Tablet.png)](https://postimg.cc/68Qjpp3N)
+[![Home-Page-Tablet.png](https://i.postimg.cc/rpsBK5Lg/Home-Page-Tablet.png)](https://postimg.cc/p9NGShrn)
 
 ## Single Video Player 
 
-[![Single-Page-Tablet.png](https://i.postimg.cc/02nXXGbf/Single-Page-Tablet.png)](https://postimg.cc/SJXGJML2)
+[![Single-Page-Tablet.png](https://i.postimg.cc/d3PpHXZS/Single-Page-Tablet.png)](https://postimg.cc/5Ygsjs3w)
 
 
 # ScreenShots  For Mobile
 
 ## Home
 
-[![Home-Page-Mobile.png](https://i.postimg.cc/3rp5Wffg/Home-Page-Mobile.png)](https://postimg.cc/xq0F452C)
-
+[![Home-Page-Mobile.png](https://i.postimg.cc/VLFpgKfD/Home-Page-Mobile.png)](https://postimg.cc/CzzcLHfq)
 
 ## Single Video Player 
 
-[![Single-Page-Mobile.png](https://i.postimg.cc/1znWzLMC/Single-Page-Mobile.png)](https://postimg.cc/Y47NnD5Y)
+[![Single-Page-Mobile.png](https://i.postimg.cc/5tDRyGgN/Single-Page-Mobile.png)](https://postimg.cc/06dfHVhL)
