@@ -7,7 +7,7 @@ export default function AllRoutes() {
     <div>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/singleplayer/:id" element={<SinglePlayer/>}/>
+        <Route path="/singleplayer/:id/:page" element={<SinglePlayer/>}/>
       </Routes>
     </div>
   )

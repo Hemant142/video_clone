@@ -57,9 +57,9 @@ const Home: React.FC = () => {
   return (
     <div className="relative">
       <div className="container mx-auto py-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mr-5 ml-5">
           {videos.map((video) => (
-            <VideoCard key={video.postId} video={video} />
+            <VideoCard key={video.postId} video={video} page={currentPage} />
           ))}
         </div>
       </div>

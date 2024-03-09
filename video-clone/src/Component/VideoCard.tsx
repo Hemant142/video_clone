@@ -30,14 +30,15 @@ interface Video {
 
 interface Props {
   video: Video;
+  page:number
 }
 
-const VideoCard: React.FC<Props> = ({ video }) => {
+const VideoCard: React.FC<Props> = ({ video, page }) => {
   const [expend, setExpend] = useState(false);
 
   return (
     <div className="border border-gray-300 p-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-      <Link to={`/singleplayer/${video.postId}`}>
+      <Link to={`/singleplayer/${video.postId}/${page}`}>
         <img
           src={video.submission.thumbnail}
           alt={video.submission.title}

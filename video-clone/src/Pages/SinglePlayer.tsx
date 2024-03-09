@@ -5,6 +5,7 @@ import { BiLike, BiDislike, BiSolidLike, BiSolidDislike } from "react-icons/bi";
 
 const SinglePlayer: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const {page}=useParams();
   const [video, setVideo] = useState<any>(null);
   const [liked, setLiked] = useState<boolean>(false);
   const [disliked, setDisliked] = useState<boolean>(false);
@@ -13,7 +14,7 @@ const SinglePlayer: React.FC = () => {
   const [totalComments, setTotalComments] = useState<number>(0);
   const [expend, setExpend] = useState(false);
   const [newComment, setNewComment] = useState<string>("");
-
+//  console.log(page,"page")
   useEffect(() => {
     fetchVideo();
     fetchComments();
@@ -22,10 +23,12 @@ const SinglePlayer: React.FC = () => {
   const fetchVideo = async () => {
     try {
       const response = await axios.get(
-        `https://internship-service.onrender.com/videos`
+        `https://internship-service.onrender.com/videos?page=${page}`
       );
       const data = response.data.data;
+      
       const foundVideo = data.posts.find((v: any) => v.postId === id);
+      console.log(data,"vidfound")
       setVideo(foundVideo || null);
 
       // Retrieve likes from local storage
@@ -154,7 +157,7 @@ const SinglePlayer: React.FC = () => {
           >
             Your browser does not support the video tag.
           </video>
-          <div className="flex justify-between items-center mt-4">
+          <div className="flex justify-between items-center mt-4 mr-5 ml-5">
             <h2 className="text-2xl font-bold">{video.submission.title}</h2>
             <div className="flex items-center">
               <div className="flex items-center border border-gray-300 rounded-full px-2 py-1 mr-2">
@@ -181,7 +184,7 @@ const SinglePlayer: React.FC = () => {
               
             </div>
           </div>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mr-5 ml-5">
             {expend
               ? video.submission.description
               : `${video.submission.description.substring(0, 50)}...`}
@@ -201,7 +204,7 @@ const SinglePlayer: React.FC = () => {
               </button>
             )}
           </p>
-          <div>
+          <div className="mr-5 ml-5">
             <h3 className="text-xl font-bold">{totalComments} Comments</h3>
             <div className="flex flex-col space-y-4">
               <div className="flex flex-col space-y-1">
