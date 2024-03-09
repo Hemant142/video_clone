@@ -5,7 +5,7 @@ import { BiLike, BiDislike, BiSolidLike, BiSolidDislike } from "react-icons/bi";
 
 const SinglePlayer: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const {page}=useParams();
+  const { page } = useParams();
   const [video, setVideo] = useState<any>(null);
   const [liked, setLiked] = useState<boolean>(false);
   const [disliked, setDisliked] = useState<boolean>(false);
@@ -14,7 +14,7 @@ const SinglePlayer: React.FC = () => {
   const [totalComments, setTotalComments] = useState<number>(0);
   const [expend, setExpend] = useState(false);
   const [newComment, setNewComment] = useState<string>("");
-//  console.log(page,"page")
+  //  console.log(page,"page")
   useEffect(() => {
     fetchVideo();
     fetchComments();
@@ -26,9 +26,9 @@ const SinglePlayer: React.FC = () => {
         `https://internship-service.onrender.com/videos?page=${page}`
       );
       const data = response.data.data;
-      
+
       const foundVideo = data.posts.find((v: any) => v.postId === id);
-      console.log(data,"vidfound")
+      console.log(data, "vidfound");
       setVideo(foundVideo || null);
 
       // Retrieve likes from local storage
@@ -135,9 +135,9 @@ const SinglePlayer: React.FC = () => {
   const handleComment = () => {
     addComment();
   };
-  const handleCommentCancel=()=>{
-    setNewComment("")
-  }
+  const handleCommentCancel = () => {
+    setNewComment("");
+  };
 
   return (
     <div className="container mx-auto">
@@ -158,7 +158,12 @@ const SinglePlayer: React.FC = () => {
             Your browser does not support the video tag.
           </video>
           <div className="flex justify-between items-center mt-4 mr-5 ml-5">
-            <h2 className="text-2xl font-bold">{video.submission.title}</h2>
+            <div>
+              {" "}
+              <h2 className="text-2xl font-bold">{video.submission.title}</h2>
+              <h4 className="text-md font-bold">{video.creator.name}</h4>
+            </div>
+
             <div className="flex items-center">
               <div className="flex items-center border border-gray-300 rounded-full px-2 py-1 mr-2">
                 <button
@@ -166,7 +171,11 @@ const SinglePlayer: React.FC = () => {
                   onClick={handleLike}
                   disabled={liked}
                 >
-                  {liked ? <BiSolidLike className="mr-1" /> : <BiLike className="mr-1" />}
+                  {liked ? (
+                    <BiSolidLike className="mr-1" />
+                  ) : (
+                    <BiLike className="mr-1" />
+                  )}
                   <span>{likes == 0 ? video.reaction.count : likes}</span>
                 </button>
                 <button
@@ -181,7 +190,6 @@ const SinglePlayer: React.FC = () => {
                   )}
                 </button>
               </div>
-              
             </div>
           </div>
           <p className="text-gray-600 mr-5 ml-5">
@@ -189,17 +197,11 @@ const SinglePlayer: React.FC = () => {
               ? video.submission.description
               : `${video.submission.description.substring(0, 50)}...`}
             {!expend ? (
-              <button
-                className="font-bold "
-                onClick={() => setExpend(!expend)}
-              >
+              <button className="font-bold " onClick={() => setExpend(!expend)}>
                 Read More
               </button>
             ) : (
-              <button
-                className="font-bold "
-                onClick={() => setExpend(!expend)}
-              >
+              <button className="font-bold " onClick={() => setExpend(!expend)}>
                 Read Less
               </button>
             )}
@@ -215,20 +217,20 @@ const SinglePlayer: React.FC = () => {
                   value={newComment}
                   onChange={(e) => setNewComment(e.target.value)}
                 />
-               <div className="grid grid-cols-2 gap-10">
-  <button
-    className="bg-blue-500 text-white px-4 py-2 rounded-lg"
-    onClick={handleCommentCancel}
-  >
-    Cancel
-  </button>
-  <button
-    className="bg-blue-500 text-white px-4 py-2 rounded-lg"
-    onClick={handleComment}
-  >
-    Add Comment
-  </button>
-</div>
+                <div className="grid grid-cols-2 gap-10">
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+                    onClick={handleCommentCancel}
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+                    onClick={handleComment}
+                  >
+                    Add Comment
+                  </button>
+                </div>
               </div>
               <div className="space-y-2">
                 {comments.map((comment, index) => (
