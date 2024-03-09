@@ -3,6 +3,10 @@ The "Video Clone" web application is a simplified platform where users can brows
 
 # Deployed Link
  [Live](https://video-clone-pearl.vercel.app/)
+ 
+# Video Link
+  [Video](https://drive.google.com/file/d/1yeT9Nc6a-2HTZZQSe_EtXkkSR1DFs0VU/view?usp=sharing)
+  
 # Frontend
 
 React.js | TypeScript | Javascript |  Tailwind
